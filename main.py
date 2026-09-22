@@ -2,8 +2,6 @@
 
 import grades
 
-# Student Identity Configuration
-
 LAST_NAME = 'Magalong'
 STUDENT_ID = 'TUPM-26-1134'
 
@@ -11,7 +9,6 @@ SEED_DIGIT = int(STUDENT_ID[-1])
 ID_SUM = sum(int(d) for d in STUDENT_ID if d.isdigit())
 NAME_LENGTH = len(LAST_NAME)
 
-# Generate student-unique scores
 scores = [
     SEED_DIGIT * 10,
     ID_SUM % 100,

@@ -1,6 +1,7 @@
 def compute_average(scores):
     return sum(scores) / len(scores)
 
+
 def assign_grade(avg):
     if avg >= 90:
         return 'A'
@@ -12,6 +13,7 @@ def assign_grade(avg):
         return 'D'
     else:
         return 'F'
+
 
 def generate_remark(grade):
     remarks = {
